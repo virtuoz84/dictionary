@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словарь сложных слов с произношением</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Словарь сложных слов</h1>
+            <p class="description">Прослушайте произношение сложных английских слов из текстов о вакцинации. Нажмите на кнопку "Произношение" для прослушивания.</p>
+        </header>
+        
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Поиск слова или перевода...">
+                <button class="search-clear" id="search-clear">×</button>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="Медицина">Медицина</button>
+                <button class="filter-btn" data-category="Общее">Общее</button>
+                <button class="filter-btn" data-category="Социология">Социология</button>
+                <button class="filter-btn" data-category="Экономика">Экономика</button>
+                <button class="filter-btn" data-category="Технологии">Технологии</button>
+                <button class="filter-btn" data-category="Психология">Психология</button>
+                <button class="filter-btn" data-category="Политика">Политика</button>
+            </div>
+        </div>
+        
+        <div class="counter">
+            <div>Найдено слов: <span id="word-count">80</span></div>
+            <div>Изучено: <span id="learned-count">0</span> из <span id="total-count">80</span></div>
+            <div>Страница: <span id="current-page">1</span> из <span id="total-pages">8</span></div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+        </div>
+        
+        <div class="words-container">
+            <!-- Слова будут добавлены с помощью JavaScript -->
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Кнопки пагинации будут добавлены с помощью JavaScript -->
+        </div>
+        
+        <footer>
+            <p>Создано для изучения сложных слов из текстов о вакцинации</p>
+        </footer>
+    </div>
+
+    <div class="notification" id="notification">Слово отмечено как изученное!</div>
+
+    <script src="js/words-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
