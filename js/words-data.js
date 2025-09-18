@@ -85,4 +85,5 @@ const words = [
     { word: "Associated with", translation: "связанные с", category: "Общее" },
     { word: "Effectiveness", translation: "эффективность, действенность", category: "Общее" },
     { word: "Offering hope", translation: "вселяя надежду", category: "Психология" }
+    { word: "Fragrance", translation: "Аромат, запах", category: "Обычное" }
 ];
